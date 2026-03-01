@@ -1,0 +1,32 @@
+{
+    "type": "array",
+    "description": "A collection of upstream regulator-circuit associations across studies, where each row represents a single modulated circuit linked to an upstream regulator within a given study.",
+    "items": {
+        "type": "object",
+        "description": "Represents a single upstream regulator to modulated circuit mapping within a study.",
+        "properties": {
+            "study_name": {
+                "type": "string",
+                "description": "Name of the study. Typically has multiple upstream regulators tested."
+            },
+            "upstream_regulator_ensembl_gene_id": {
+                "type": "string",
+                "description": "Ensembl gene ID of the upstream regulator tested to see which circuits it modulates. Can have multiple GO terms and modulated circuits associated with it."
+            },
+            "go_term_associated_with_circuit": {
+                "type": "string",
+                "description": "Gene Ontology (GO) term describing the biological process, molecular function, or cellular component associated with the upstream regulator."
+            },
+            "modulated_circuit_list": {
+                "type": "string",
+                "description": "Identifier of the gene set representing the modulated circuit, following the pattern 'gene_set_{N}'."
+            }
+        },
+        "required": [
+            "study_name",
+            "upstream_regulator_ensembl_gene_id",
+            "go_term_associated_with_circuit",
+            "modulated_circuit_list"
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "type": "array",
+    "description": "A collection of modulated circuits, each containing a list of Ensembl gene IDs belonging to that circuit.",
+    "items": {
+        "type": "object",
+        "description": "Represents a single modulated circuit and its associated gene members.",
+        "properties": {
+            "modulated_circuit": {
+                "type": "string",
+                "description": "Identifier for the modulated circuit, following the pattern 'gene_set_{N}'."
+            },
+            "ensembl_gene_id": {
+                "type": "array",
+                "description": "List of Ensembl gene IDs belonging to this modulated circuit.",
+                "items": {
+                    "type": "string",
+                    "description": "A single Ensembl gene ID."
+                }
+            }
+        },
+        "required": [
+            "modulated_circuit",
+            "ensembl_gene_id"
+        ]
+    }
+}
