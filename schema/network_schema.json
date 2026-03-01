@@ -1,0 +1,59 @@
+{
+    "type": "array",
+    "description": "A collection of studies, each containing multiple gene perturbations.",
+    "items": {
+        "type": "object",
+        "description": "Represents a single study.",
+        "properties": {
+            "study_name": {
+                "type": "string",
+                "description": "Name of the perturbation study."
+            },
+            "perturbation_type": {
+                "type": "string",
+                "description": "Type of perturbation: knockout, mAb, small molecule, etc."
+            },
+            "perturbations": {
+                "type": "array",
+                "description": "A list of gene-pair perturbations within this study.",
+                "items": {
+                    "type": "object",
+                    "description": "Details of a single gene-pair perturbation.",
+                    "properties": {
+                        "node_a": {
+                            "type": "string",
+                            "description": "Ensembl gene ID (source)."
+                        },
+                        "node_b": {
+                            "type": "string",
+                            "description": "Ensembl gene ID (target)."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Direction of perturbation (e.g., 'directed', 'undirected')."
+                        },
+                        "p_value": {
+                            "type": "number",
+                            "description": "P-value of the perturbation."
+                        },
+                        "interaction_type": {
+                            "type": "string",
+                            "description": "Type of interaction: activation, inhibition, etc."
+                        }
+                    },
+                    "required": [
+                        "node_a",
+                        "node_b",
+                        "direction",
+                        "p_value",
+                        "interaction_type"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "study_name",
+            "perturbations"
+        ]
+    }
+}
