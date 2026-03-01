@@ -1,0 +1,86 @@
+[
+    {
+        "study_id": 1,
+        "study_name": "hepatocyte (pilot)",
+        "study_description": "Pilot study to evaluate effects of oxybutyne-99 on hepatocytes for non-alcoholic steatohepatitis (NASH).",
+        "entity_connection_table": "hepatocyte_pilot_entity_connection",
+        "study_ELN": "(1) ELN743291 - RNA-seq Data Generation; (2) ELN158034 - ATAC-seq Data Generation; (3) ELN826510 - Proteomics Data Generation"
+    },
+    {
+        "study_id": 2,
+        "study_name": "hepatocyte (signature screen)",
+        "study_description": "Signature screen to evaluate effects of oxybutyne-99 on hepatocytes for non-alcoholic steatohepatitis (NASH).",
+        "entity_connection_table": "hepatocyte_signature_screen_entity_connection",
+        "study_ELN": "(1) ELN302847 - RNA-seq Data Generation; (2) ELN571923 - ChIP-seq Data Generation; (3) ELN489016 - Immunoassay Data Generation; (4) ELN634782 - Mass Spectrometry Data Generation; (5) ELN217365 - Flow Cytometry Data Generation"
+    },
+    {
+        "study_id": 3,
+        "study_name": "astrocyte (pilot)",
+        "study_description": "Pilot study to evaluate effects of randomomab on astrocytes for Alzheimer's disease.",
+        "entity_connection_table": "astrocyte_pilot_entity_connection",
+        "study_ELN": "(1) ELN093471 - 10X Chromium Data Generation; (2) ELN865203 - CUT&RUN Data Generation"
+    },
+    {
+        "study_id": 4,
+        "study_name": "astrocyte (signature screen)",
+        "study_description": "Signature screen to evaluate effects of randomomab on astrocytes for Alzheimer's disease.",
+        "entity_connection_table": "astrocyte_signature_screen_entity_connection",
+        "study_ELN": "(1) ELN410856 - 10X Chromium Data Generation; (2) ELN728934 - SMART-seq Data Generation; (3) ELN195047 - Hi-C Data Generation; (4) ELN583621 - Proteomics Data Generation"
+    },
+    {
+        "study_id": 5,
+        "study_name": "microglia (pilot)",
+        "study_description": "Pilot study to evaluate effects of florbinastatin-4 on microglia for Parkinson's disease.",
+        "entity_connection_table": "microglia_pilot_entity_connection",
+        "study_ELN": "(1) ELN047293 - snRNA-seq Data Generation; (2) ELN362810 - ATAC-seq Data Generation; (3) ELN519748 - Immunoassay Data Generation"
+    },
+    {
+        "study_id": 6,
+        "study_name": "microglia (signature screen)",
+        "study_description": "Signature screen to evaluate effects of florbinastatin-4 on microglia for Parkinson's disease.",
+        "entity_connection_table": "microglia_signature_screen_entity_connection",
+        "study_ELN": "(1) ELN784502 - snRNA-seq Data Generation; (2) ELN236914 - CUT&TAG Data Generation; (3) ELN651083 - Flow Cytometry Data Generation; (4) ELN028347 - Mass Spectrometry Data Generation; (5) ELN495761 - Spatial Transcriptomics Data Generation"
+    },
+    {
+        "study_id": 7,
+        "study_name": "cardiomyocyte (pilot)",
+        "study_description": "Pilot study to evaluate effects of glompezumab on cardiomyocytes for dilated cardiomyopathy.",
+        "entity_connection_table": "cardiomyocyte_pilot_entity_connection",
+        "study_ELN": "(1) ELN371640 - Bulk RNA-seq Data Generation; (2) ELN809253 - ChIP-seq Data Generation; (3) ELN142986 - Proteomics Data Generation; (4) ELN567034 - Electrophysiology Data Generation"
+    },
+    {
+        "study_id": 8,
+        "study_name": "cardiomyocyte (signature screen)",
+        "study_description": "Signature screen to evaluate effects of glompezumab on cardiomyocytes for dilated cardiomyopathy.",
+        "entity_connection_table": "cardiomyocyte_signature_screen_entity_connection",
+        "study_ELN": "(1) ELN924517 - 10X Chromium Data Generation; (2) ELN683042 - ATAC-seq Data Generation; (3) ELN251879 - Immunoassay Data Generation"
+    },
+    {
+        "study_id": 9,
+        "study_name": "pancreatic beta cell (pilot)",
+        "study_description": "Pilot study to evaluate effects of trocavapine on pancreatic beta cells for type 2 diabetes.",
+        "entity_connection_table": "pancreatic_beta_cell_pilot_entity_connection",
+        "study_ELN": "(1) ELN073618 - SMART-seq Data Generation; (2) ELN438295 - Hi-C Data Generation; (3) ELN816047 - Flow Cytometry Data Generation; (4) ELN592381 - CUT&RUN Data Generation"
+    },
+    {
+        "study_id": 10,
+        "study_name": "pancreatic beta cell (signature screen)",
+        "study_description": "Signature screen to evaluate effects of trocavapine on pancreatic beta cells for type 2 diabetes.",
+        "entity_connection_table": "pancreatic_beta_cell_signature_screen_entity_connection",
+        "study_ELN": "(1) ELN347801 - snRNA-seq Data Generation; (2) ELN965234 - Spatial Transcriptomics Data Generation"
+    },
+    {
+        "study_id": 11,
+        "study_name": "proximal tubule cell (pilot)",
+        "study_description": "Pilot study to evaluate effects of bluntirizole-3 on proximal tubule cells for chronic kidney disease.",
+        "entity_connection_table": "proximal_tubule_cell_pilot_entity_connection",
+        "study_ELN": "(1) ELN512903 - Bulk RNA-seq Data Generation; (2) ELN784136 - Mass Spectrometry Data Generation; (3) ELN269450 - ChIP-seq Data Generation; (4) ELN031872 - Immunoassay Data Generation; (5) ELN658319 - PacBio Data Generation"
+    },
+    {
+        "study_id": 12,
+        "study_name": "proximal tubule cell (signature screen)",
+        "study_description": "Signature screen to evaluate effects of bluntirizole-3 on proximal tubule cells for chronic kidney disease.",
+        "entity_connection_table": "proximal_tubule_cell_signature_screen_entity_connection",
+        "study_ELN": "(1) ELN197562 - snRNA-seq Data Generation; (2) ELN874023 - CUT&TAG Data Generation; (3) ELN443710 - Spatial Transcriptomics Data Generation"
+    }
+]

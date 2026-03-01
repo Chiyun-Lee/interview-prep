@@ -1,0 +1,37 @@
+{
+    "type": "array",
+    "description": "A collection of studies evaluating the effects of compounds on specific cell types for target diseases.",
+    "items": {
+        "type": "object",
+        "description": "Represents an in-house study performed.",
+        "properties": {
+            "study_id": {
+                "type": "integer",
+                "description": "Unique numeric identifier for the study."
+            },
+            "study_name": {
+                "type": "string",
+                "description": "Name of the study, typically composed of cell type and study phase (e.g., 'hepatocyte (pilot)')."
+            },
+            "study_description": {
+                "type": "string",
+                "description": "Human-readable description of the study, including the compound, cell type, and target disease."
+            },
+            "entity_connection_table": {
+                "type": "string",
+                "description": "Name of the database table storing entity connections for this study, following the pattern '{cell_type}_{study_phase}_entity_connection'."
+            },
+            "study_ELN": {
+                "type": "string",
+                "description": "Ordered list of Electronic Lab Notebook (ELN) references associated with this study, each entry specifying an ELN code and the corresponding data generation method. Format: '(N) ELNXXXXXX - {Method} Data Generation'."
+            }
+        },
+        "required": [
+            "study_id",
+            "study_name",
+            "study_description",
+            "entity_connection_table",
+            "study_ELN"
+        ]
+    }
+}
