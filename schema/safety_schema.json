@@ -1,0 +1,126 @@
+{
+    "title": "Gene Safety Information from Open Targets",
+    "description": "Gene safety schema from Open Targets, with property names converted to snake_case and enriched descriptions.",
+    "type": "object",
+    "properties": {
+        "ensembl_gene_id": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "Ensembl Stable ID for the gene. This is the primary identifier for human targets in the Open Targets Platform."
+        },
+        "number_of_paralogs": {
+            "type": [
+                "integer",
+                "null"
+            ],
+            "description": "The number of paralogous genes found for the given human gene, indicating genes that arose via gene duplication."
+        },
+        "paralog_max_target_query_pct": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Maximum percentage identity of a paralog to the target gene, where the target gene is considered the query sequence. This reflects the percentage of identical amino acids in the paralog compared with the gene of interest."
+        },
+        "paralog_max_query_target_pct": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Maximum percentage identity of the query gene (gene of interest) to a paralog, where the paralog is considered the target sequence. This indicates the identity of the gene of interest when compared with the paralog."
+        },
+        "mouse_orthology_confidence": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Confidence score for orthology between the human gene and its mouse ortholog, typically derived from comparative genomics tools like Ensembl Compara and based on metrics such as percentage identity and orthology scores."
+        },
+        "mouse_target_query_pct_id": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Percentage identity of the mouse ortholog to the human target gene. This represents the percentage of the human target sequence that matches the mouse gene."
+        },
+        "rat_orthology_confidence": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Confidence score for orthology between the human gene and its rat ortholog, derived from comparative genomics analyses."
+        },
+        "rat_target_query_pct_id": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Percentage identity of the rat ortholog to the human target gene."
+        },
+        "cyno_orthology_confidence": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Confidence score for orthology between the human gene and its cynomolgus monkey (cyno) ortholog, derived from comparative genomics analyses."
+        },
+        "cyno_target_query_pct_id": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Percentage identity of the cynomolgus monkey (cyno) ortholog to the human target gene."
+        },
+        "rabbit_orthology_confidence": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Confidence score for orthology between the human gene and its rabbit ortholog, derived from comparative genomics analyses."
+        },
+        "rabbit_target_query_pct_id": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Percentage identity of the rabbit ortholog to the human target gene."
+        },
+        "genetic_constraint": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "A measure of how intolerant a gene is to variation (e.g., loss-of-function variants), based on observed versus expected variant counts. In Open Targets, this is typically derived from the gnomAD LOEUF (loss-of-function observed/expected upper bound fraction) metric, where a score of -1 indicates the least tolerance and 1 indicates the most tolerance to LoF variation."
+        },
+        "is_cancer_driver_gene": {
+            "type": [
+                "number",
+                "null"
+            ],
+            "description": "Indicates whether the gene is classified as a cancer driver gene (e.g., oncogene or tumor suppressor gene) based on data from sources like the COSMIC Cancer Gene Census or IntOGen. In Open Targets scoring, a value of -1 typically flags it as a driver gene."
+        },
+        "is_essential": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Indicates whether the gene is considered essential for viability, often determined by studies such as DepMap that identify common essential genes in cell lines."
+        },
+        "safety_event_source": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "Studies which demonstrates well-characterized safety concerns, that are routinely used in secondary pharmacology screens. (e.g., Bowes J et al., Reducing safety-related drug attrition: the use of in vitro pharmacological profiling. Nat Rev Drug Discov. 2012 Dec;11(12):909-22. doi: 10.1038/nrd3845. PMID: 23197038.)"
+        },
+        "safety_event": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if a known safety event, such as an adverse drug reaction or toxicity, has been reported for the gene."
+        }
+    }
+}
