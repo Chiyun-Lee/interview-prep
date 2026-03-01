@@ -1,0 +1,16 @@
+{
+  "type": "array",
+  "description": "A list of mappings from UniProt IDs to Gene Ontology (GO) descriptions.",
+  "items": {
+    "type": "object",
+    "properties": {
+      "uniprot_id": {
+        "type": "string"
+      },
+      "go_desc": {
+        "type": "string"
+      }
+    },
+    "required": ["uniprot_id", "go_desc"]
+  }
+}
