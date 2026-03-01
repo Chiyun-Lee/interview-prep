@@ -1,0 +1,98 @@
+{
+    "title": "Target Tractability Schema",
+    "description": "Schema for assessing the tractability of a target for small molecule and antibody drug development, based on various biological and chemical features.",
+    "type": "object",
+    "properties": {
+        "uniprot_acc": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "The UniProt accession number for the protein target."
+        },
+        "sm_precedence": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "Indicates the highest level of small molecule chemical precedence for the target, e.g., 'Clinical', 'Preclinical', 'Tool', 'Known Ligand', 'No Ligand'."
+        },
+        "sm_domain_annotation": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "A summary of relevant small molecule druggable domain annotations for the target, such as 'Kinase', 'GPCR', 'Ion Channel', 'Nuclear Receptor'."
+        },
+        "sm_pharmaprojects": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the target has been investigated by small molecules in PharmaProjects, suggesting active drug development."
+        },
+        "sm_chembl": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the target has associated small molecule activity data in ChEMBL, a database of chemical biology data."
+        },
+        "sm_gostar": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the target has associated small molecule data in GOSTAR, another comprehensive medicinal chemistry database."
+        },
+        "sm_pdb": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the target has 3D structural data (e.g., protein-ligand complex) available in the Protein Data Bank (PDB), aiding small molecule design."
+        },
+        "sm_cxg": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the target is found in the Chemogenomics database (CXG)."
+        },
+        "sm_rf_proteomics": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the target has evidence of small molecule binding from reactive fragment screens."
+        },
+        "sm_eta": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "Small molecule experimental Tractability Assessment (ETA) score or categorization, providing an overall assessment of small molecule druggability."
+        },
+        "ab_pharmaprojects": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the target has been investigated by antibodies in PharmaProjects, suggesting active antibody drug development."
+        },
+        "secreted": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if the protein target is secreted, making it potentially accessible to antibody therapies."
+        },
+        "extracellular_region": {
+            "type": [
+                "boolean",
+                "null"
+            ],
+            "description": "Boolean indicating if a significant part of the protein target is located in the extracellular region, which is crucial for antibody binding."
+        }
+    }
+}
